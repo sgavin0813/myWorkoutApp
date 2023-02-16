@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:layout_margin="20dp"
+    android:id="@+id/fragmentLayoutBMI"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculateBMI"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:id="@+id/bmiText"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintWeight"
+        android:inputType="number"
+        android:id="@+id/weight"
+        android:autofillHints="200" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintHeightF"
+        android:inputType="number"
+        android:id="@+id/heightFeet"
+        android:autofillHints="200" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintHeightI"
+        android:inputType="number"
+        android:id="@+id/heightInch"
+        android:autofillHints="200" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculateButton"
+        android:backgroundTint="#09730D"
+        android:id="@+id/btnCalcBMI"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:backgroundTint="#09730D"
+        android:id="@+id/resetBMI"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:id="@+id/resultText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        android:id="@+id/errorText"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
