@@ -25,9 +25,23 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun initializeList(){
-        for (i in 0..10){
-        exerciseList.add(ExerciseData("name","Group",R.drawable.one))
-    }
+
+            exerciseList.add(ExerciseData("Bench press","Chest",R.drawable.benchpress))
+            exerciseList.add(ExerciseData("Inclined press","Chest",R.drawable.inclined))
+            exerciseList.add(ExerciseData("Dumbbell press","Chest",R.drawable.benchpress))
+            exerciseList.add(ExerciseData("Cable Flies","Chest",R.drawable.inclined))
+
+            exerciseList.add(ExerciseData("Shoulder press","Shoulder",R.drawable.sholderpress))
+            exerciseList.add(ExerciseData("Side Raises","Shoulder",R.drawable.sideraise))
+            exerciseList.add(ExerciseData("Lateral Raises","Shoulder",R.drawable.sholderpress))
+            exerciseList.add(ExerciseData("Shoulder press","Shoulder",R.drawable.sideraise))
+
+            exerciseList.add(ExerciseData("Lats Pulldown","Back",R.drawable.lats))
+            exerciseList.add(ExerciseData("Curls","Biceps",R.drawable.curls))
+            exerciseList.add(ExerciseData("Curls","Biceps",R.drawable.curls))
+            exerciseList.add(ExerciseData("Curls","Biceps",R.drawable.curls))
+            exerciseList.add(ExerciseData("Curls","Biceps",R.drawable.curls))
+
     }
     private fun replaceFragment( currentFragment:Fragment){
         val fragmentManager = supportFragmentManager
