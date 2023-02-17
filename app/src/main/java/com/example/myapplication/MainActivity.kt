@@ -36,11 +36,18 @@ class MainActivity : AppCompatActivity() {
             exerciseList.add(ExerciseData("Lateral Raises","Shoulder",R.drawable.sholderpress))
             exerciseList.add(ExerciseData("Shoulder press","Shoulder",R.drawable.sideraise))
 
-            exerciseList.add(ExerciseData("Lats Pulldown","Back",R.drawable.lats))
+            exerciseList.add(ExerciseData("Lats Pull-down","Back",R.drawable.lats))
+
+
+
             exerciseList.add(ExerciseData("Curls","Biceps",R.drawable.curls))
-            exerciseList.add(ExerciseData("Curls","Biceps",R.drawable.curls))
-            exerciseList.add(ExerciseData("Curls","Biceps",R.drawable.curls))
-            exerciseList.add(ExerciseData("Curls","Biceps",R.drawable.curls))
+            exerciseList.add(ExerciseData("Reverse Curls","Biceps",R.drawable.reversecurls))
+            exerciseList.add(ExerciseData("Inclined Curls","Biceps",R.drawable.inclinedcurls))
+            exerciseList.add(ExerciseData("Preachers Curls","Biceps",R.drawable.curls))
+
+            exerciseList.add(ExerciseData("Squats","Legs",R.drawable.squat))
+            exerciseList.add(ExerciseData("Curls","Lower Body",R.drawable.deadlift))
+
 
     }
     private fun replaceFragment( currentFragment:Fragment){
