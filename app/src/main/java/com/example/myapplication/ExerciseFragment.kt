@@ -28,12 +28,11 @@ class ExerciseFragment : Fragment()
         recyclerExercise.adapter = adapter
         adapter.setOnItemClickListener(object : ExerciseListAdapter.OnItemClickListener{
             override fun onItemClick(position: Int) {
-                val text = "Hello toast!"
-                val duration = Toast.LENGTH_SHORT
-                val toast = Toast.makeText(requireContext(), text, duration)
-                toast.show()
-
-
+                val intent = Intent(requireContext(),ExerciseExpandedActivity::class.java)
+                intent.putExtra("name",exerciseList[position].exerciseName)
+                intent.putExtra("group",exerciseList[position].exerciseMuscle)
+                intent.putExtra("image",exerciseList[position].exerciseImage)
+                startActivity(intent)
             }
         })
 
