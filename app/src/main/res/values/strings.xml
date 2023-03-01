@@ -17,4 +17,12 @@
     <string name="reset">Reset</string>
     <string name="Sets">SETS</string>
     <string name="repetition">Reps</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="track_calories">Track Calories</string>
+    <string name="food_list">Food List</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="myworkoutapp">MyWorkOutApp</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
